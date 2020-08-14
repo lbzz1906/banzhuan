@@ -67,3 +67,45 @@ body {
     background-color: #afc1ee;
     border-radius: 50%;
 }
+li{
+    list-style: none;
+}
+.box1{
+    height: 80%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* position: relative; */
+}
+.box2{
+    display: flex;
+    /* position: absolute; */
+}
+.box2 li {
+    width: 300px;
+    height: 530px;
+    flex-shrink: 0;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#img{
+    background-color: pink;
+    margin: 5% auto;
+    width: 90%;
+    height: 400px;
+}
+#title{
+    padding-left: 20px;
+}
+#price{
+    padding-left: 20px;
+    color: red;
+}
+button{
+    float: right;
+    margin-right: 20px;
+    margin-top: -10px;
+    padding: 5px 25px;
+}
