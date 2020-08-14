@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    letter-spacing: .05em;
+
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    background-image: linear-gradient(to right,#fbc2eb,#a6c1ee);
+    animation: mymove 5s infinite;
+
+}
+@keyframes mymove {
+    from{filter: hue-rotate(0);}
+    to{filter: hue-rotate(360deg);}
+}
+
+.login-wrapper{
+    background-color: #ffffff;
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.login-wrapper{
+    background-color: #ffffff;
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.login-wrapper .header{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+}
+
+.login-wrapper .form-warpper .input-item{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128,125,125);
+    font-size: 10px;
+    color: #A2A2A2;
+    outline-color: pink;
+}
+
+.login-wrapper .form-warpper .input-item::placeholder{
+    text-transform: uppercase;
+}
+
+.login-wrapper .form-warpper .btn{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right,#a6c1ee,#fbc2eb);
+    color:#fff;
+}
+
+.login-wrapper .msg{
+    text-align: center;
+    line-height: 80px;
+    font-size: 13px;
+}
+.login-wrapper .msg a{
+    text-decoration-line: none;
+    color: #a6c1ee;
+}
+.che{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.check{
+    text-align: center;
+    height: 20px;
+    width: 60px;
+    border: 1px solid #00a4ff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.checked{
+    text-align: center;
+    height: 20px;
+    width: 60px;
+    border: 1px solid #00a4ff;
+    padding: 2px 5px 2px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    background-color: pink;
+}
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/rooter.css"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="../css/buy.css">
+</head>
+<body>
+<div class="container"></div>
+<div class="buy">
+    <div class="til">
+        <div class="title">商品修改</div>
+        <div class="user"></div>
+    </div>
+    <div class="root">
+        <div class="tab">
+            <table>
+                <thead>
+                <tr style="font-size: 25px;font-weight: bolder">
+                    <td>商品图片</td>
+                    <td>商品名称</td>
+                    <td>商品价格</td>
+                    <td>操作</td>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="but">
+            <div class=btns>
+                <input class=pict id=pict type=file onchange="previewFile()" size=6>
+                <lable for=pict>
+                    <input type=button value=添加图片></lable>
+            </div>
+            <strong>名称:&nbsp</strong>
+            <input type="text" class="bor" id="nam">
+            <strong>&nbsp价格:&nbsp</strong>
+            <input type="text" class="bor" id="pri">
+            <button id="but">提交</button>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery.3.4.js"></script>
+<script src="../js/rooter.js"></script>
+</body>
+</html>
