@@ -90,22 +90,61 @@ li{
     margin: 15px;
 }
 
-#img{
+img{
     background-color: pink;
-    margin: 5% auto;
-    width: 90%;
-    height: 400px;
+    margin: 5px 7px;
+    width: 95%;
+    height: 300px;
 }
-#title{
+h3{
     padding-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
-#price{
+p{
     padding-left: 20px;
+    color: gray;
+    padding-top: 5px;
+    font-style: italic;
+    font-size: 5px;
+}
+p2{
+    display: block;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+p3{
+    display: block;
+    background-color: black;
+    width: 70px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
     color: red;
+    float: right;margin-top: -80px;
+    animation: mymove 3s infinite;
+}
+p4{
+    z-index: -9;
+    display: block;
+    color: red;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
 }
 button{
     float: right;
     margin-right: 20px;
     margin-top: -10px;
     padding: 5px 25px;
+    background-color: white;
+    border: 2px black solid;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: black;
+    color: pink;
+    font-weight: bold;
+    animation: mymove 5s infinite;
 }
