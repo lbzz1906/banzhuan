@@ -14,9 +14,7 @@ $.getJSON("/getAllGoods", {}, function (data) {
         desv = o.goodsDescribe;
         shopv= o.shopsName;
         priv = o.goodsPrice;
-        alert(picv+" "+namv+" "+numv+" "+desv+" "+shopv+" "+priv);
         var tbody = document.querySelector('ul');
-
             var li = document.createElement('li');
             tbody.appendChild(li);
             var img = document.createElement("img");
@@ -33,7 +31,8 @@ $.getJSON("/getAllGoods", {}, function (data) {
             li.appendChild(shop);
             li.appendChild(pri);
             li.appendChild(but);
-            img.innerHTML = "https://imgchr.com/i/dFvEM8";
+            alert(picv);
+            img.src =picv;
             nam.innerHTML = namv;
             num.innerHTML = numv;
             des.innerHTML = desv;

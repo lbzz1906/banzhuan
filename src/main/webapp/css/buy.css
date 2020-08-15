@@ -91,7 +91,8 @@ li{
 }
 
 img{
-    background-color: pink;
+    /*background-color: pink;*/
+;
     margin: 5px 7px;
     width: 95%;
     height: 300px;
