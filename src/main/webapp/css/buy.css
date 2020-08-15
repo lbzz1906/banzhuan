@@ -84,7 +84,7 @@ li{
     width: 300px;
     height: 530px;
     flex-shrink: 0;
-
+    background-image: url("../img/soujikuang.png");
     border: 2px solid black;
     border-radius: 5px;
     margin: 15px;

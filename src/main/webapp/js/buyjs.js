@@ -1,27 +1,26 @@
-    $.getJSON("/getAllGoods",{},function(data){
-        $(data).each(function(i,o){
-            alert(o.goodsId+"||"+o.goodsName+"||"+o.goodsPrice+
-                "||"+o.goodsImage+"||"+o.categoryId+"||"+o.goodsDescribe+"||"+o.shopsName+"||");
-        })
-    })
-
-datas = [
+var datas = [
     {
-        pic: 'srcc',
-        nam: '小米10',
-        num: 110,
-        des: "很好的板砖,买不了吃亏",
-        shop: "淘一淘",
-        pri: 2000,
-    }, {
-        pic: 'srcc',
-        nam: '华为·没他',
-        num: 111,
-        des: "买不了上当",
-        shop: "华为旗舰",
-        pri: 2001,
     }
 ];
+var em = [{pic: picv, nam: namv, num: numv, des: desv, shop: shopv, pri: priv}];
+
+
+$.getJSON("/getAllGoods", {}, function (data) {
+    $(data).each(function (i, o) {
+        alert(o.goodsId + "||" + o.goodsName + "||" + o.goodsPrice +
+            "||" + o.goodsImage + "||" + o.categoryId + "||" + o.goodsDescribe + "||" + o.shopsName + "||");
+        pic.nodeValue = o.goodsImage;
+        nam.nodeValue = o.goodsName;
+        num.nodeValue = o.goodsId;
+        des.nodeValue = o.goodsDescribe;
+        shop.nodeValue = o.shopsName;
+        pri.nodeValue = o.goodsPrice;
+        for(i in em.length){
+            datas.push(em[i]);
+        }
+    })
+})
+
 
 var tbody = document.querySelector('ul');
 for (var i = 0; i < datas.length; i++) {
@@ -47,5 +46,5 @@ for (var i = 0; i < datas.length; i++) {
     des.innerHTML = datas[i].des;
     shop.innerHTML = datas[i].shop;
     pri.innerHTML = datas[i].pri;
-    but.innerHTML="购买";
+    but.innerHTML = "购买";
 }
