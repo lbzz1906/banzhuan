@@ -20,4 +20,11 @@ public class WalletController {
         return flag;
     }
 
+    @RequestMapping("/updateMoney")
+    @ResponseBody
+    public boolean updateMoney(float money){
+        boolean flag=false;
+        flag=walletService.updateMoney(money);
+        return flag;
+    }
 }

@@ -130,4 +130,8 @@
       wallet_balance = #{walletBalance,jdbcType=REAL}
     where wallet_id = #{walletId,jdbcType=INTEGER}
   </update>
+
+  <update id="updateMoney">
+    update wallet set wallet
+  </update>
 </mapper>

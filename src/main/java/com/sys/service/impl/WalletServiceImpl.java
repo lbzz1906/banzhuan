@@ -28,4 +28,14 @@ public class WalletServiceImpl implements WalletService {
         }
         return flag;
     }
+
+    @Override
+    public boolean updateMoney(float money) {
+        boolean flag=false;
+        int num=walletMapper.updateMoney(money);
+        if(num>0){
+            flag=true;
+        }
+        return flag;
+    }
 }

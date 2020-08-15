@@ -5,4 +5,5 @@ import com.sys.pojo.Wallet;
 public interface WalletService {
     boolean insert(Wallet wallet);
     boolean updateByPrimaryKeySelective(Wallet wallet);
+    boolean updateMoney(float money);
 }

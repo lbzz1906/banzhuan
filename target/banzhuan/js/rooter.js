@@ -14,8 +14,9 @@ but.addEventListener('click', function () {
     var numv = num.value;
     var desv = des.value;
     var shopv = shop.value;
+    alert(nam.value+"|"+pri.value+"|"+num.value+"|"+des.value+"|"+shop.value);
     $.getJSON("/addGoods",
-        {"goodsName": namv, "goodsPrice": priv},
+        {"goodsName": namv, "goodsPrice": priv,"goodsDescribe":desv,"categoryId":numv,"shopsName":shopv},
         function (data) {
             if (data) {
                 alert("请添加图片");

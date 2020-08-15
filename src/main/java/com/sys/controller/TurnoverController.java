@@ -13,10 +13,11 @@ public class TurnoverController {
     @Autowired
     TurnoverService turnoverService=new TurnoverServiceImpl();
 
-    @RequestMapping("addTurnover")
+    @RequestMapping("/addTurnover")
     @ResponseBody
     public boolean insert(Turnover turnover){
         boolean flag=false;
+
         flag=turnoverService.insert(turnover);
         return flag;
     }
