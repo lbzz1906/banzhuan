@@ -33,7 +33,7 @@ $.getJSON("/getAllGoods", {}, function (data) {
             li.appendChild(shop);
             li.appendChild(pri);
             li.appendChild(but);
-            img.innerHTML = picv;
+            img.innerHTML = "https://imgchr.com/i/dFvEM8";
             nam.innerHTML = namv;
             num.innerHTML = numv;
             des.innerHTML = desv;
