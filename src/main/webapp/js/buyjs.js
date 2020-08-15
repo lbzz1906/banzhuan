@@ -1,9 +1,13 @@
 var datas = [
-    {
-    }
+    {}
 ];
 var em = [{pic: picv, nam: namv, num: numv, des: desv, shop: shopv, pri: priv}];
-
+nam.value = '';
+pri.value = '';
+num.value = '';
+des.value = '';
+shop.value = '';
+pic.value = '';
 
 $.getJSON("/getAllGoods", {}, function (data) {
     $(data).each(function (i, o) {
@@ -15,7 +19,7 @@ $.getJSON("/getAllGoods", {}, function (data) {
         des.nodeValue = o.goodsDescribe;
         shop.nodeValue = o.shopsName;
         pri.nodeValue = o.goodsPrice;
-        for(i in em.length){
+        for (i in em.length) {
             datas.push(em[i]);
         }
     })
