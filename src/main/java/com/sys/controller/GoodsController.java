@@ -42,9 +42,6 @@ public class GoodsController {
     @RequestMapping("/addGoods")
     @ResponseBody
     public boolean insert(Goods goods){
-        goods.setGoodsDescribe(".............");
-        goods.setCategoryId(1);
-        goods.setShopsName("淘宝");
         goodname=goods.getGoodsName();
         boolean flag=false;
         flag=goodsService.insert(goods);
@@ -66,8 +63,12 @@ public class GoodsController {
         return list;
     }
 
-
-
+    @RequestMapping("/getAllGoods")
+    @ResponseBody
+    public List<Goods> getAllGoods(){
+        List<Goods> list=goodsService.getAllGoods();
+        return list;
+    }
 
 
 

@@ -171,7 +171,11 @@
     update goods set goods_image=#{newimage} where goods_name=#{newname}
   </update>
   <select id="getGoodsByGoodsName" resultType="Goods">
-    select goods_id as goodsID,goods_name as GoodsName=goodsName,goods_price as goodsPrice,goods_image as goodsImage,
+    select goods_id as goodsID,goods_name as goodsName,goods_price as goodsPrice,goods_image as goodsImage,
      goods_describe as goodsDescribe,shops_name as shopsName from goods where goods_name=#{goodsname}
+  </select>
+  <select id="getAllGoods" resultType="Goods">
+    select goods_id as goodsID,goods_name as goodsName,goods_price as goodsPrice,goods_image as goodsImage,
+     goods_describe as goodsDescribe,shops_name as shopsName from goods
   </select>
 </mapper>

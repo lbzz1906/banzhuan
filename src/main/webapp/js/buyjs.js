@@ -1,3 +1,10 @@
+    $.getJSON("/getAllGoods",{},function(data){
+        $(data).each(function(i,o){
+            alert(o.goodsId+"||"+o.goodsName+"||"+o.goodsPrice+
+                "||"+o.goodsImage+"||"+o.categoryId+"||"+o.goodsDescribe+"||"+o.shopsName+"||");
+        })
+    })
+
 datas = [
     {
         pic: 'srcc',

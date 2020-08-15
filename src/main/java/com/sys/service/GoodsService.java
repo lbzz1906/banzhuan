@@ -8,5 +8,6 @@ public interface GoodsService {
     boolean insert(Goods goods);
     boolean addImage(String image,String goodsname);
     boolean updateByPrimaryKeySelective(Goods goods);
+    List<Goods> getAllGoods();
     List<Goods> getGoodsByGoodsName(String goodsname);
 }
