@@ -30,19 +30,18 @@ body {
     }
 }
 
-.goods {
+.users {
     position: fixed;
     z-index: 1;
     background-color: #ffffff;
-    width: 64%;
-    height: 95%;
+    width: 50%;
+    height: 80%;
     border-radius: 15px;
     padding: 0 50px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
 .til {
     margin-top: 30px;
 }
@@ -55,36 +54,15 @@ body {
     display: inline-block;
 }
 
-.ordertab1 {
-    position: absolute;
-    border-top: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
-}
-
-.ordertab1 td {
-    border-right: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.orderbg {
-    height: 33px;
-    line-height: 33px;
-    background: #e6e6e6;
+.til .user {
+    border: black 4px solid;
+    animation: mymove 5s infinite;
+    font-size: 45px;
     text-align: center;
-    border-bottom: 1px solid #d5d5d5;
-}
-
-.orderbg1 {
-    height: 32px;
-    line-height: 32px;
-    color: #636363;
-}
-
-.orderbg1 span {
-    padding-left: 15px;
-}
-
-.box3 {
-    position: relative;
-    height: 78%;
+    width: 70px;
+    height: 70px;
+    float:right;
+    display: inline-block;
+    background-color: #afc1ee;
+    border-radius: 50%;
 }
