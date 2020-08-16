@@ -14,7 +14,6 @@ but.addEventListener('click', function () {
     var numv = num.value;
     var desv = des.value;
     var shopv = shop.value;
-    alert(nam.value+"|"+pri.value+"|"+num.value+"|"+des.value+"|"+shop.value);
     $.getJSON("/addGoods",
         {"goodsName": namv, "goodsPrice": priv,"goodsDescribe":desv,"categoryId":numv,"shopsName":shopv},
         function (data) {
@@ -48,7 +47,7 @@ but.addEventListener('click', function () {
 
     var tr = document.createElement('tr');
     var li = document.createElement("b");
-    li.innerHTML = '<img src="" height="200" alt="img..."><br>';
+    li.innerHTML = '<img src="" height="100" alt="img..."><br>';
 
     tbody.appendChild(tr);
     tr.appendChild(li);

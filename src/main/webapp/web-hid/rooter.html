@@ -4,20 +4,19 @@
     <link rel="stylesheet" type="text/css" href="../css/rooter.css"/>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="../css/buy.css">
 </head>
 <body>
 <div class="container"></div>
-<div class="buy">
+<div class="root">
     <div class="til">
         <div class="title">商品修改</div>
         <div class="user"></div>
     </div>
-    <div class="root">
+    <div class="box">
         <div class="tab">
-            <table>
+            <table class="ordertab1">
                 <thead>
-                <tr style="font-size: 25px;font-weight: bolder">
+                <tr class="orderbg">
                     <td>图片</td>
                     <td>编号</td>
                     <td>名称</td>
@@ -32,11 +31,10 @@
             </table>
         </div>
 
-        <div class="but">
+        <div class="orderbg"style="width: 93.7%">
             <div class=btns>
                 <input class=pict id=pict type=file onchange="previewFile()" size=6>
-                <lable for=pict>
-                    <input type=button value=添加图片></lable>
+                <lable for=pict><input type=button value=添加图片></lable>
             </div>
             <strong>&nbsp编号:&nbsp</strong>
             <input type="text" class="bor" id="num">
@@ -48,8 +46,8 @@
             <input type="text" class="bor" id="shop">
             <strong>&nbsp价格:&nbsp</strong>
             <input type="text" class="bor" id="pri">
-            <button id="but">提交</button>
-        </div>
+
+        </div><input type="button" id="but" value="提交">
     </div>
 </div>
 <script src="../js/jquery.3.4.js"></script>
