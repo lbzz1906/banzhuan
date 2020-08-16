@@ -29,6 +29,7 @@ body {
         filter: hue-rotate(360deg);
     }
 }
+
 .goods {
     position: fixed;
     z-index: 1;
@@ -41,6 +42,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 .til {
     margin-top: 30px;
 }
@@ -51,4 +53,32 @@ body {
     font-size: 50px;
     font-weight: bold;
     display: inline-block;
+}
+
+.ordertab1 {
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+}
+
+.ordertab1 td {
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.orderbg {
+    height: 33px;
+    line-height: 33px;
+    background: #e6e6e6;
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.orderbg1 {
+    height: 32px;
+    line-height: 32px;
+    color: #636363;
+}
+
+.orderbg1 span {
+    padding-left: 15px;
 }
