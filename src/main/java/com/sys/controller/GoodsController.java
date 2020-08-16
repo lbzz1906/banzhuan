@@ -21,7 +21,7 @@ public class GoodsController {
     @ResponseBody
     public boolean addImage(MultipartFile file) {
         boolean flag=false;
-        String path=url();
+        String path="E:\\JAVA\\ideaProjects\\banzhuan2.0\\src\\main\\webapp\\goodsimages";
         if(!file.isEmpty()){
             String name=file.getOriginalFilename();
             File rootfile=new File(path);
@@ -35,7 +35,7 @@ public class GoodsController {
                 e.printStackTrace();
             }
         }
-        flag=goodsService.addImage(path+"/"+file.getOriginalFilename(),goodname);
+        flag=goodsService.addImage("../goodsimages/"+file.getOriginalFilename(),goodname);
         return flag;
     }
 
@@ -71,24 +71,4 @@ public class GoodsController {
     }
 
 
-
-
-
-    public static String url(){
-        //测试获取tomcat下的webapps路径
-        String upload;  //存到webapps下文件的名称
-        String tomcat_path = System.getProperty("user.dir");
-        System.out.println("tomcatPath:" + tomcat_path);
-        //获取Tomcat服务器所在路径的最后一个文件目录
-        String bin_path = tomcat_path.substring(tomcat_path.lastIndexOf("\\")+1,tomcat_path.length());
-        System.out.println(bin_path);
-        //若最后一个文件目录为bin目录，则服务器为手动启动
-        if(("bin").equals(bin_path)){//手动启动Tomcat时获取路径为：D:\Software\Tomcat-8.5\bin
-            //获取保存上传图片的文件路径
-            upload = tomcat_path.substring(0,System.getProperty( "user.dir" ).lastIndexOf("\\")) +"\\webapps"+"\\goodsimages\\";
-        }else{//服务中自启动Tomcat时获取路径为：D:\Software\Tomcat-8.5
-            upload = tomcat_path+"\\webapps"+"\\goodsimages\\";
-        }
-        return upload;
-    }
 }
