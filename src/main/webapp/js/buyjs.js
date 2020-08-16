@@ -1,4 +1,3 @@
-
 var picv='pic';
 var namv='nam';
 var numv='num';

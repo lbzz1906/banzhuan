@@ -1,8 +1,9 @@
-.root {
-    text-align: center;
-}
 *{
     user-select: none;
+}
+.root {
+    text-align: center;
+    height: 80%;
 }
 table {
     display: inline-block;
@@ -21,7 +22,7 @@ tr {
 
 .tab {
     position: relative;
-    height: 520px;
+    height: 90%;
     overflow: auto;
     margin-bottom: 40px;
     border-radius: 30px;
