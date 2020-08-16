@@ -34,7 +34,7 @@ body {
     position: fixed;
     z-index: 1;
     background-color: #ffffff;
-    width: 50%;
+    width: 25%;
     height: 80%;
     border-radius: 15px;
     padding: 0 50px;
@@ -54,7 +54,7 @@ body {
     display: inline-block;
 }
 
-.til .user {
+.user {
     border: black 4px solid;
     animation: mymove 5s infinite;
     font-size: 45px;
@@ -65,4 +65,16 @@ body {
     display: inline-block;
     background-color: #afc1ee;
     border-radius: 50%;
+}
+td{
+    display: block;
+
+    line-height: 60px;
+}
+tr{
+
+}
+table{
+    margin-top: 80px;
+    margin-left: 30px;
 }

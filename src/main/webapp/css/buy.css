@@ -155,5 +155,6 @@ button:hover{
     color: black;
     box-shadow: 0 12px 16px 0 rgba(253, 142, 142, 0.24), 0 17px 50px 0 rgb(153, 179, 245);
     font-weight: bold;
+
     animation: mymove 15s infinite;
 }
