@@ -18,4 +18,10 @@ public class OrdersServiceImpl implements OrdersService {
         }
         return flag;
     }
+
+    @Override
+    public Orders getOrdersByTime(String time) {
+        Orders orders=ordersMapper.getOrdersByTime(time);
+        return orders;
+    }
 }

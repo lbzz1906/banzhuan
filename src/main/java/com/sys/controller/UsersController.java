@@ -81,4 +81,17 @@ public class UsersController {
 
         return flag&&flag1;
     }
+
+    @RequestMapping("updateUsersMsg")
+    @ResponseBody
+    public boolean updateByPrimaryKeySelective(Users users){
+        boolean flag=false;
+        try {
+            flag=usersService.updateByPrimaryKeySelective(users);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return flag;
+    }
+
 }

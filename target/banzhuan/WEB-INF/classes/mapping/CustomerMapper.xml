@@ -108,4 +108,7 @@
       customer_address = #{customerAddress,jdbcType=VARCHAR}
     where customer_id = #{customerId,jdbcType=INTEGER}
   </update>
+  <select id="getCustomersAddress" resultType="java.lang.String">
+    select customer_address from customer where users_id=#{userid}
+  </select>
 </mapper>

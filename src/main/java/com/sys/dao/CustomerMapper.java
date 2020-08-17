@@ -53,4 +53,5 @@ public interface CustomerMapper {
      * @mbggenerated Sun Aug 09 14:49:32 CST 2020
      */
     int updateByPrimaryKey(Customer record)throws SQLException;
+    String getCustomersAddress(int userid);
 }

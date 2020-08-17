@@ -132,6 +132,6 @@
   </update>
 
   <update id="updateMoney">
-    update wallet set wallet
+    update wallet set wallet_balance=wallet_balance+#{money} where wallet_account=#{username};
   </update>
 </mapper>

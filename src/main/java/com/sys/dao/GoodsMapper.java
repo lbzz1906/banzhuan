@@ -56,5 +56,6 @@ public interface GoodsMapper {
     int updateByPrimaryKey(Goods record);
     List<Goods> getGoodsByGoodsName(String goodsname);
     List<Goods> getAllGoods();
+    List<Goods> getGoodsByUsersName(String usersname);
     int addImage(@Param("newimage")String image, @Param("newname")String goodsname);
 }

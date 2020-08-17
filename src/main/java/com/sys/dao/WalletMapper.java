@@ -1,6 +1,7 @@
 package com.sys.dao;
 
 import com.sys.pojo.*;
+import org.apache.ibatis.annotations.Param;
 
 public interface WalletMapper {
     /**
@@ -50,5 +51,5 @@ public interface WalletMapper {
      * @mbggenerated Sun Aug 09 14:49:32 CST 2020
      */
     int updateByPrimaryKey(Wallet record);
-    int updateMoney(float money);
+    int updateMoney(@Param("money") float m, @Param("username")String name);
 }

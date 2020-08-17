@@ -178,4 +178,9 @@
     select goods_id as goodsID,goods_name as goodsName,goods_price as goodsPrice,goods_image as goodsImage,
      goods_describe as goodsDescribe,shops_name as shopsName from goods
   </select>
+  <select id="getGoodsByShopsName" resultType="Goods">
+    select goods.goods_id as goodsID,goods.goods_name as goodsName,goods.goods_price as goodsPrice,goods.goods_image as goodsImage,
+     goods.goods_describe as goodsDescribe,goods.shops_name as shopsName from goods,shops
+     where shops.users_name=#{usersname} and shops.shops_name=goods.shops_name
+  </select>
 </mapper>

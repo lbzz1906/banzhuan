@@ -23,6 +23,7 @@
     <result column="orders_status" property="ordersStatus" jdbcType="VARCHAR" />
     <result column="orders_courier_number" property="ordersCourierNumber" jdbcType="VARCHAR" />
     <result column="shops_name" property="shopsName" jdbcType="VARCHAR" />
+    <result column="goods_name" property="goodsName" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
     <!--
@@ -33,7 +34,7 @@
     orders_id, orders_entry_time, orders_payment_time, orders_delivery_time, orders_receiving_time, 
     orders_cancel_time, orders_return_goods_start_time, orders_return_goods_end_time, 
     orders_end_time, orders_total_money, orders_consignee_name, orders_consignee_address, 
-    orders_consignee_phone, orders_status, orders_courier_number, shops_name
+    orders_consignee_phone, orders_status, orders_courier_number, shops_name,goods_name
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     <!--
@@ -67,14 +68,14 @@
       orders_return_goods_end_time, orders_end_time, 
       orders_total_money, orders_consignee_name, orders_consignee_address, 
       orders_consignee_phone, orders_status, orders_courier_number, 
-      shops_name)
+      shops_name,goods_name)
     values (#{ordersId,jdbcType=INTEGER}, #{ordersEntryTime,jdbcType=VARCHAR}, #{ordersPaymentTime,jdbcType=VARCHAR}, 
       #{ordersDeliveryTime,jdbcType=VARCHAR}, #{ordersReceivingTime,jdbcType=VARCHAR}, 
       #{ordersCancelTime,jdbcType=VARCHAR}, #{ordersReturnGoodsStartTime,jdbcType=VARCHAR}, 
       #{ordersReturnGoodsEndTime,jdbcType=VARCHAR}, #{ordersEndTime,jdbcType=VARCHAR}, 
       #{ordersTotalMoney,jdbcType=REAL}, #{ordersConsigneeName,jdbcType=VARCHAR}, #{ordersConsigneeAddress,jdbcType=VARCHAR}, 
       #{ordersConsigneePhone,jdbcType=VARCHAR}, #{ordersStatus,jdbcType=VARCHAR}, #{ordersCourierNumber,jdbcType=VARCHAR}, 
-      #{shopsName,jdbcType=VARCHAR})
+      #{shopsName,jdbcType=VARCHAR},#{goodsName,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.sys.pojo.Orders" >
     <!--
@@ -182,6 +183,9 @@
       <if test="shopsName != null" >
         #{shopsName,jdbcType=VARCHAR},
       </if>
+      <if test="goodsName != null" >
+        #{goodsName,jdbcType=VARCHAR},
+      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.sys.pojo.Orders" >
@@ -237,6 +241,9 @@
       <if test="shopsName != null" >
         shops_name = #{shopsName,jdbcType=VARCHAR},
       </if>
+      <if test="goodsName != null" >
+        goods_name = #{shopsName,jdbcType=VARCHAR},
+      </if>
     </set>
     where orders_id = #{ordersId,jdbcType=INTEGER}
   </update>
@@ -261,7 +268,13 @@
       orders_consignee_phone = #{ordersConsigneePhone,jdbcType=VARCHAR},
       orders_status = #{ordersStatus,jdbcType=VARCHAR},
       orders_courier_number = #{ordersCourierNumber,jdbcType=VARCHAR},
-      shops_name = #{shopsName,jdbcType=VARCHAR}
+      shops_name = #{shopsName,jdbcType=VARCHAR},
+      goods_name = #{goodsName,jdbcType=VARCHAR}
     where orders_id = #{ordersId,jdbcType=INTEGER}
   </update>
+  <select id="getOrdersByTime" resultType="Orders">
+    select orders_id as ordersId,orders_entry_time as ordersEntryTime,orders_total_money as ordersTotalMoney,
+     orders_consignee_name as ordersConsigneeName,orders_consignee_address as ordersConsigneeAddress,
+     orders_consignee_phone as ordersConsigneePhone,shops_name as shopsName,goods_name as goodsName from orders where orders_entry_time=#{time}
+  </select>
 </mapper>

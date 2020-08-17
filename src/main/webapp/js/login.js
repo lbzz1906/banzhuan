@@ -7,8 +7,8 @@ var log=document.querySelector('#log');
 check1.addEventListener("click", function f(){
 this.className='checked';
 check2.className='check';
-var username=username.value;
-localStorage.setItem('username',username);
+var usersname=username.value;
+localStorage.setItem('username',usersname);
     log.addEventListener("click",function login(){
         $.getJSON("loginCheck",
             {"username":username.value,"password":userpassword.value},
@@ -25,7 +25,7 @@ localStorage.setItem('username',username);
 check2.addEventListener("click", function f(){
     this.className='checked';
     check1.className='check';
-    localStorage.setItem('username',username);
+    localStorage.setItem('username',usersname);
     log.addEventListener("click",function login(){
         $.getJSON("loginCheck",
             {"username":username.value,"password":userpassword.value},

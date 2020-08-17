@@ -30,9 +30,9 @@ public class WalletServiceImpl implements WalletService {
     }
 
     @Override
-    public boolean updateMoney(float money) {
+    public boolean updateMoney(float money,String username) {
         boolean flag=false;
-        int num=walletMapper.updateMoney(money);
+        int num=walletMapper.updateMoney(money,username);
         if(num>0){
             flag=true;
         }

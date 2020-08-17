@@ -20,4 +20,12 @@ public class CustomerServiceImpl implements CustomerService {
         }
         return flag;
     }
+
+    @Override
+    public String getCustomerAddress(int userid) {
+        String adress=new String();
+        adress=customerMapper.getCustomersAddress(userid);
+        return adress;
+    }
+
 }

@@ -57,4 +57,13 @@ public class GoodsServiceImpl implements GoodsService {
         list=goodsMapper.getGoodsByGoodsName(goodsname);
         return list;
     }
+
+    @Override
+    public List<Goods> getGoodsByUsersName(String usersname) {
+        List<Goods> list=new ArrayList<>();
+        list=goodsMapper.getGoodsByUsersName(usersname);
+        return list;
+    }
+
+
 }

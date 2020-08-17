@@ -10,4 +10,5 @@ public interface GoodsService {
     boolean updateByPrimaryKeySelective(Goods goods);
     List<Goods> getAllGoods();
     List<Goods> getGoodsByGoodsName(String goodsname);
+    List<Goods> getGoodsByUsersName(String usersname);
 }

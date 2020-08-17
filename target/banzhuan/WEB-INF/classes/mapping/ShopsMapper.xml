@@ -166,4 +166,9 @@
       users_name = #{usersName,jdbcType=VARCHAR}
     where shops_id = #{shopsId,jdbcType=INTEGER}
   </update>
+
+  <select id="getShopByShopname" resultType="Shops">
+    select shops_name as shopsName,users_id as usersId,shops_address as shopsAddress,shops_phone as shopsPhone,
+            shops_email as shopsEmail,users_name as usersName from shops where shops_name=#{shopname}
+  </select>
 </mapper>

@@ -6,6 +6,8 @@ import com.sys.service.ShopsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ShopsServiceImpl implements ShopsService {
     @Autowired
@@ -19,6 +21,12 @@ public class ShopsServiceImpl implements ShopsService {
             flag=true;
         }
         return flag;
+    }
+
+    @Override
+    public List<Shops> getShops(String shopname) {
+        List<Shops> list=shopsMapper.getShopByShopname(shopname);
+        return list;
     }
 
     @Override

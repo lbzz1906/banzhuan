@@ -5,4 +5,5 @@ import com.sys.pojo.Customer;
 
 public interface CustomerService {
     boolean insert(Customer customer);
+    String getCustomerAddress(int userid);
 }

@@ -50,4 +50,5 @@ public interface OrdersMapper {
      * @mbggenerated Sun Aug 09 14:49:32 CST 2020
      */
     int updateByPrimaryKey(Orders record);
+    Orders getOrdersByTime(String time);
 }

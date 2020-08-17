@@ -39,8 +39,6 @@ public class UsersServiceImpl implements UsersService {
     @Override
     public List<Users> getUserByUsersname(String username)throws SQLException{
         List<Users> list = usersMapper.getUserByUsersname(username);
-        System.out.println(usersMapper.getUserByUsersname(username));
-        System.out.println(list);
       return list;
     }
 

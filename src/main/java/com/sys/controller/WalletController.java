@@ -22,9 +22,9 @@ public class WalletController {
 
     @RequestMapping("/updateMoney")
     @ResponseBody
-    public boolean updateMoney(float money){
+    public boolean updateMoney(float money,String username){
         boolean flag=false;
-        flag=walletService.updateMoney(money);
+        flag=walletService.updateMoney(money,username);
         return flag;
     }
 }
