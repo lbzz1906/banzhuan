@@ -115,6 +115,7 @@ tr {
     float: right;
     margin-right: -100px;
     width: 100px;
+    margin-top: -40px;
     height: 40px;
     color: white;
     font-size: 20px;
@@ -122,14 +123,10 @@ tr {
     font-weight: bold;
     border-radius: 20px ;
     margin-left: 20px;
-    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation: mymove 15s infinite;
-    background: linear-gradient(#f68585, #8a8afd);
-}
-
-input {
-    width: 130px;
+    background: linear-gradient(#85b2f6, #8a8afd);
 }
 
 #but:hover {
@@ -140,7 +137,34 @@ input {
     font-weight: bold;
     animation: mymove 15s infinite;
 }
-
+#del {
+    float: right;
+    margin-right: -100px;
+    margin-top: -90px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 20px ;
+    margin-left: 20px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: mymove 15s infinite;
+    background: linear-gradient(#ff6a6a, #ff0a0a);
+}
+#del:hover {
+    background-color: #aec1ed;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(191, 191, 191, 0.19);
+    border: hidden;
+    font-weight: bold;
+    animation: mymove 15s infinite;
+}
+input {
+    width: 110px;
+}
 .btns {
     position: relative;
     text-align: left;
