@@ -26,7 +26,7 @@ log.addEventListener("click",function addUser() {
             if(!data){
                 alert("注册失败");
             }else{
-                window.location.href = "buy.html";
+                window.location.href = "../login.html";
             }
         })
 })

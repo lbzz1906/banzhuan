@@ -23,7 +23,6 @@
                     <td>描述</td>
                     <td>店铺</td>
                     <td>价格</td>
-                    <td>操作</td>
                 </tr>
                 </thead>
                 <tbody>
@@ -31,7 +30,7 @@
             </table>
         </div>
 
-        <div class="orderbg"style="width: 93.7%">
+        <div class="orderbg" style="width: 93.7%">
             <div class=btns>
                 <input class=pict id=pict type=file onchange="previewFile()" size=6>
                 <lable for=pict><input type=button value=添加图片></lable>
@@ -46,8 +45,12 @@
             <input type="text" class="bor" id="shop">
             <strong>&nbsp价格:&nbsp</strong>
             <input type="text" class="bor" id="pri">
+            <strong>&nbsp删除:&nbsp</strong>
+            <input type="text" class="bor" id="delt">
 
-        </div><input type="button" id="but" value="提交">
+        </div>
+        <input type="button" id="del" value="删除">
+        <input type="button" id="but" value="提交">
     </div>
 </div>
 <script src="../js/jquery.3.4.js"></script>

@@ -108,4 +108,8 @@
       users_id = #{usersId,jdbcType=INTEGER}
     where manager_id = #{managerId,jdbcType=INTEGER}
   </update>
+
+  <select id="managerCheck" resultType="int">
+    select 1 from manager,users where users.users_name=#{usn} and users.users_password=#{psw} and users.users_id=manager.users_id
+  </select>
 </mapper>

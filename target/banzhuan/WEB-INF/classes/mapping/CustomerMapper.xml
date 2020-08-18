@@ -111,4 +111,7 @@
   <select id="getCustomersAddress" resultType="java.lang.String">
     select customer_address from customer where users_id=#{userid}
   </select>
+  <update id="addCustomersAddress" parameterType="Customer">
+    update customer set customer_address=#{addr} where users_id=#{uid}
+  </update>
 </mapper>

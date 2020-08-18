@@ -3,6 +3,7 @@ package com.sys.dao;
 
 import com.sys.pojo.Customer;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.sql.SQLException;
 
@@ -54,4 +55,5 @@ public interface CustomerMapper {
      */
     int updateByPrimaryKey(Customer record)throws SQLException;
     String getCustomersAddress(int userid);
+    int addCustomersAddress(@Param("addr") String address,@Param("uid")int userid);
 }

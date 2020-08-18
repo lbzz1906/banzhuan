@@ -28,4 +28,15 @@ public class CustomerServiceImpl implements CustomerService {
         return adress;
     }
 
+
+    @Override
+    public boolean addCustomersAddress(String address,int userid) {
+        boolean flag=false;
+        int num=customerMapper.addCustomersAddress(address,userid);
+        if(num>0){
+            flag=true;
+        }
+        return flag;
+    }
+
 }

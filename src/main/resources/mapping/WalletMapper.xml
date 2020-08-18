@@ -48,9 +48,9 @@
       This element was generated on Sun Aug 09 21:14:32 CST 2020.
     -->
     insert into wallet (wallet_id, users_id, wallet_account, 
-      wallet_password, wallet_balance)
+      wallet_password)
     values (#{walletId,jdbcType=INTEGER}, #{usersId,jdbcType=INTEGER}, #{walletAccount,jdbcType=VARCHAR}, 
-      #{walletPassword,jdbcType=VARCHAR}, #{walletBalance,jdbcType=REAL})
+      #{walletPassword,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.sys.pojo.Wallet" >
     <!--

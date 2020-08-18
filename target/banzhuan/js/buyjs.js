@@ -74,7 +74,7 @@ $.getJSON("/getAllGoods", {}, function (data) {
         var shop = $(obj).parent('li').children('p3').html();
         var pri = $(obj).parent('li').children('p4').html();
         $.getJSON("/addOrderAndTurnover",
-            {"goodsName":nam,"shopsName":shop,"ordersTotalMoney":pri,"ordersConsigneeName":localStorage.getItem('username')},
+            {"goodsName":nam,"shopsName":shop,"ordersTotalMoney":pri,"ordersConsigneeName":sessionStorage.getItem('username')},
             function (data) {
                 if(data){
                     location.href="orders.html";

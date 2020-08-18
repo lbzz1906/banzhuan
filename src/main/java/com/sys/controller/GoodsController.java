@@ -63,6 +63,13 @@ public class GoodsController {
         return list;
     }
 
+    @RequestMapping("/getGoodsByUsersName")
+    @ResponseBody
+    public List<Goods> getGoodsByUsersName(String usersname){
+        List<Goods> list=goodsService.getGoodsByUsersName(usersname);
+        return list;
+    }
+
     @RequestMapping("/getAllGoods")
     @ResponseBody
     public List<Goods> getAllGoods(){

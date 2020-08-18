@@ -1,6 +1,7 @@
 package com.sys.dao;
 
 import com.sys.pojo.*;
+import org.apache.ibatis.annotations.Param;
 
 public interface ManagerMapper {
     /**
@@ -50,4 +51,6 @@ public interface ManagerMapper {
      * @mbggenerated Sun Aug 09 14:49:32 CST 2020
      */
     int updateByPrimaryKey(Manager record);
+
+    int managerCheck(@Param("usn")String usersname,@Param("psw") String password);
 }

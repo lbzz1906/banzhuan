@@ -1,3 +1,16 @@
+$.getJSON("/getAllGoods",
+    {},
+    function (data) {
+        $(data).each(function (i, o) {
+            $("table").append("<tr><td>" + "<img src='" + o.goodsImage + "'>" + "</td><td>" + o.goodsId + "</td><td>" + o.goodsName +
+                "</td><td>" + o.goodsDescribe + "</td><td>" + o.shopsName + "</td><td>" + o.goodsPrice + "</td></tr>");
+        })
+    }
+)
+
+
+
+
 var nam = document.getElementById('nam');
 var pri = document.getElementById('pri');
 var but = document.getElementById('but');
@@ -57,9 +70,9 @@ but.addEventListener('click', function () {
         tr.appendChild(td);
         td.innerHTML = datas[i][k];
     }
-    var del = document.createElement('td');
-    del.innerHTML = '<a id="dell" href="javascript:;">删除</a>';
-    tr.appendChild(del);
+    // var del = document.createElement('td');
+    // del.innerHTML = '<a id="dell" href="javascript:;">删除</a>';
+    // tr.appendChild(del);
     return datas.length - 1;
 })
 var as = document.querySelectorAll('a');
