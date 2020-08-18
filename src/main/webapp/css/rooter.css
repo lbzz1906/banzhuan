@@ -113,9 +113,9 @@ tr {
 
 #but {
     float: right;
-    margin-right: 0px;
+    margin-right: -70px;
     width: 100px;
-    margin-top: 10px;
+    margin-top: -30px;
     height: 40px;
     color: white;
     font-size: 20px;
@@ -139,8 +139,8 @@ tr {
 }
 #del {
     float: right;
-    margin-right: 0px;
-    margin-top: -40px;
+    margin-right: -70px;
+    margin-top: -80px;
     width: 100px;
     height: 40px;
     color: white;

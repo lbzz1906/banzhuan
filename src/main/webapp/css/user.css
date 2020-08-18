@@ -77,15 +77,14 @@ tr{
 
 }
 table{
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 30px;
 }
 #but{
-    width: 500px;
+    width: 430px;
 }
 button {
-    margin-left: 0px;
-    width: 100px;
+    margin-left: -20px;
     height: 40px;
     color: white;
     font-size: 20px;
