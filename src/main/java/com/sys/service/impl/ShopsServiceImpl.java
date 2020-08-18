@@ -24,8 +24,8 @@ public class ShopsServiceImpl implements ShopsService {
     }
 
     @Override
-    public List<Shops> getShops(String shopname) {
-        List<Shops> list=shopsMapper.getShopByShopname(shopname);
+    public List<Shops> getShops(String username) {
+        List<Shops> list=shopsMapper.getShopByUsersname(username);
         return list;
     }
 

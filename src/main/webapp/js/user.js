@@ -24,3 +24,7 @@ $.getJSON("/getUserByUserName",
     }
 
 )
+    var shopmsg = document.querySelector('#shopmsg');
+    shopmsg.addEventListener("click",function f1() {
+        window.location.href="shopmsg.html";
+    })

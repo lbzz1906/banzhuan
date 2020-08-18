@@ -52,5 +52,5 @@ public interface ShopsMapper {
      * @mbggenerated Sun Aug 09 14:49:32 CST 2020
      */
     int updateByPrimaryKey(Shops record);
-    List<Shops> getShopByShopname(String shopname);
+    List<Shops> getShopByUsersname(String username);
 }
