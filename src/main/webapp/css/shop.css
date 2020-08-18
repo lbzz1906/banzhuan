@@ -34,10 +34,10 @@ body {
     position: fixed;
     z-index: 1;
     background-color: #ffffff;
-    width: 25%;
-    height: 80%;
+    width: 350px;
+    height: 75%;
     border-radius: 15px;
-    padding: 0 50px;
+    padding: 0 40px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -49,12 +49,14 @@ body {
 .til .title {
     width: 210px;
     line-height: 70px;
-    font-size: 50px;
+    font-size: 32px;
     font-weight: bold;
     display: inline-block;
 }
 input{
     border: 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 .shop {
     border: black 4px solid;
@@ -70,24 +72,28 @@ input{
 }
 td{
     display: block;
-
+    margin-left: 30px;
     line-height: 60px;
+    text-align: center;
 }
 tr{
+
 
 }
 table{
     margin-top: 80px;
     margin-left: 30px;
 }
+
 button {
-    margin-left: 140px;
+    margin-left: 80px;
     width: 200px;
     height: 40px;
     color: white;
     font-size: 20px;
     border: 2px solid black;
     font-weight: bold;
+    outline: none;
     border-radius: 20px ;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation: mymove 15s infinite;
@@ -98,7 +104,7 @@ button:hover {
     background-color: #aec1ed;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(191, 191, 191, 0.19);
-    border: hidden;
+
     font-weight: bold;
     animation: mymove 15s infinite;
 }

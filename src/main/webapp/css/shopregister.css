@@ -55,6 +55,8 @@ body {
 }
 input{
     border: 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 .shop {
     border: black 4px solid;

@@ -57,7 +57,7 @@ body{
 .signin-wrapper{
     background-color: #fff;
     width: 250px;
-    height: 550px;
+    height: 500px;
     border-radius: 15px;
     padding: 0 50px;
     position: relative;
@@ -94,7 +94,7 @@ body{
     text-align: center;
     padding: 10px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 50px;
     background-image: linear-gradient(to right,#a6c1ee,#fbc2eb);
     color:#fff;
 }

@@ -55,6 +55,8 @@ body {
 }
 input{
     border: 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 .user {
     border: black 4px solid;
@@ -70,22 +72,23 @@ input{
 }
 td{
     display: block;
-
+    margin-left: 40px;
     line-height: 60px;
 }
 tr{
 
 }
 table{
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 30px;
 }
 #but{
-    width: 200px;
+    width: 150px;
 }
 button {
     margin-left: 30px;
-    width: 200px;
+    display: inline-block;
+    width: 150px;
     height: 40px;
     color: white;
     font-size: 20px;
