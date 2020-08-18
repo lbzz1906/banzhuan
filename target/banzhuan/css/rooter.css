@@ -115,7 +115,7 @@ tr {
     float: right;
     margin-right: 0px;
     width: 100px;
-    margin-top: 10px;
+    margin-top: 0px;
     height: 40px;
     color: white;
     font-size: 20px;
@@ -140,7 +140,7 @@ tr {
 #del {
     float: right;
     margin-right: 0px;
-    margin-top: -40px;
+    margin-top: -45px;
     width: 100px;
     height: 40px;
     color: white;

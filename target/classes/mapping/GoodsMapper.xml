@@ -183,4 +183,7 @@
      goods.goods_describe as goodsDescribe,goods.shops_name as shopsName from goods,shops
      where shops.users_name=#{usersname} and shops.shops_name=goods.shops_name
   </select>
+  <delete id="deleteGoodsById">
+    delete from goods where goods_id=#{id};
+  </delete>
 </mapper>
