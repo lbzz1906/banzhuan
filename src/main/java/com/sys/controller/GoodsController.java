@@ -77,5 +77,12 @@ public class GoodsController {
         return list;
     }
 
+    @RequestMapping("/deleteGoodsById")
+    @ResponseBody
+    public boolean deleteGoodsById(int id){
 
+        boolean flag=false;
+        flag=goodsService.deleteGoodsById(id);
+        return flag;
+    }
 }

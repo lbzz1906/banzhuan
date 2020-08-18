@@ -30,6 +30,12 @@ public class ShopsServiceImpl implements ShopsService {
     }
 
     @Override
+    public List<Shops> getShopsByShopsname(String shopname) {
+        List<Shops> list=shopsMapper.getShopByShopsname(shopname);
+        return list;
+    }
+
+    @Override
     public boolean updateByPrimaryKeySelective(Shops shops) {
         boolean flag=false;
         int num=shopsMapper.updateByPrimaryKeySelective(shops);

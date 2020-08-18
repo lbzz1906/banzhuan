@@ -171,4 +171,9 @@
     select shops_name as shopsName,users_id as usersId,shops_id as shopsId,shops_address as shopsAddress,shops_phone as shopsPhone,
             shops_email as shopsEmail,users_name as usersName from shops where users_name=#{username}
   </select>
+
+  <select id="getShopByShopsname" resultType="Shops">
+    select shops_name as shopsName,users_id as usersId,shops_id as shopsId,shops_address as shopsAddress,shops_phone as shopsPhone,
+            shops_email as shopsEmail,users_name as usersName from shops where shops_name=#{shopname}
+  </select>
 </mapper>

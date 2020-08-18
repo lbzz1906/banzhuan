@@ -40,7 +40,7 @@ public class OrdersController {
         String time=sim.format(date.getTime());
         Users users =new Users();
         List<Shops> lists=new ArrayList<>();
-        lists=shopsService.getShops(orders.getShopsName());
+        lists=shopsService.getShopsByShopsname(orders.getShopsName());
         Shops shops=lists.get(0);
         try {
             List<Users> list=usersService.getUserByUsersname(orders.getOrdersConsigneeName());

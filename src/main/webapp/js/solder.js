@@ -117,3 +117,21 @@ function previewFile() {
         reader.readAsDataURL(file);
     }
 }
+
+var dele = document.getElementById('delt');
+var del=document.querySelector('#del');
+del.addEventListener("click",function f() {
+    $.getJSON("/deleteGoodsById",
+        {"id":dele.value},
+        function (data) {
+            if(data){
+                alert("删除成功");
+                window.location.reload();
+            }else {
+                alert("删除失败");
+            }
+        }
+
+    )
+
+})

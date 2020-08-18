@@ -58,4 +58,6 @@ public interface GoodsMapper {
     List<Goods> getAllGoods();
     List<Goods> getGoodsByUsersName(String usersname);
     int addImage(@Param("newimage")String image, @Param("newname")String goodsname);
+
+    int deleteGoodsById(int id);
 }

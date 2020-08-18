@@ -65,5 +65,13 @@ public class GoodsServiceImpl implements GoodsService {
         return list;
     }
 
-
+    @Override
+    public boolean deleteGoodsById(int id){
+        boolean flag=false;
+        int num=goodsMapper.deleteGoodsById(id);
+        if(num>0){
+            flag=true;
+        }
+        return flag;
+    }
 }

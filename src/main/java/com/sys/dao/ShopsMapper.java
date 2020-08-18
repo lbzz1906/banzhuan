@@ -53,4 +53,6 @@ public interface ShopsMapper {
      */
     int updateByPrimaryKey(Shops record);
     List<Shops> getShopByUsersname(String username);
+
+    List<Shops> getShopByShopsname(String shopname);
 }
