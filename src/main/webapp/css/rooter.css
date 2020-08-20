@@ -33,7 +33,7 @@ body {
     position: fixed;
     z-index: 1;
     background-color: #ffffff;
-    width: 82.5%;
+    width: 80.5%;
     height: 86%;
     border-radius: 15px;
     padding: 0 50px;
@@ -83,7 +83,7 @@ tr {
 
 .tab {
     position: relative;
-    height: 90%;
+    height: 97%;
     overflow: auto;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -113,9 +113,9 @@ tr {
 
 #but {
     float: right;
-    margin-right: -32px;
+    margin-right: -40px;
     width: 100px;
-    margin-top: 0px;
+    margin-top: -45px;
     height: 40px;
     color: white;
     font-size: 20px;
@@ -139,8 +139,8 @@ tr {
 }
 #del {
     float: right;
-    margin-right: -32px;
-    margin-top: -45px;
+    margin-right: -40px;
+    margin-top: -95px;
     width: 100px;
     height: 40px;
     color: white;

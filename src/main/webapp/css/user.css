@@ -35,7 +35,7 @@ body {
     z-index: 1;
     background-color: #ffffff;
     width: 20%;
-    height: 70%;
+    height: 67%;
     border-radius: 15px;
     padding: 0 50px;
     left: 50%;
@@ -55,7 +55,7 @@ body {
 }
 input{
     border: 0px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #aeaeae;
     text-align: center;
 }
 .user {
@@ -79,7 +79,7 @@ tr{
 
 }
 table{
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: 30px;
 }
 #but{
@@ -92,7 +92,7 @@ button {
     height: 40px;
     color: white;
     font-size: 20px;
-    border: 2px solid black;
+    border: 2px solid #989898;
     font-weight: bold;
     border-radius: 20px ;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
