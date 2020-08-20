@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface ShopsService {
     boolean insert(Shops shops);
+
     List<Shops> getShops(String username);
 
     List<Shops> getShopsByShopsname(String shopname);

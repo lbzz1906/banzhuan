@@ -120,7 +120,6 @@ function previewFile() {
 var dele = document.getElementById('delt');
 var del=document.querySelector('#del');
 del.addEventListener("click",function f() {
-    alert(dele.value);
     $.getJSON("/deleteGoodsById",
         {"id":dele.value},
         function (data) {
